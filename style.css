@@ -1,10 +1,23 @@
- .row {
-     display: flex;
- }
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+  }
 
- .cell {
-     flex: 0 0 40px;
-     height: 40px;
-     border: 1px solid #ddd;
-     box-sizing: border-box;
- }
+  #grid {
+      display: inline-block;
+      border: 1px solid #ddd;
+  }
+
+  .row {
+      display: flex;
+  }
+
+  .cell {
+      flex: 0 0 40px;
+      height: 40px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+  }
