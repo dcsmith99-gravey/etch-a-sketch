@@ -21,3 +21,7 @@
       border: 1px solid #ddd;
       box-sizing: border-box;
   }
+
+  .colored {
+      background-color: black;
+  }

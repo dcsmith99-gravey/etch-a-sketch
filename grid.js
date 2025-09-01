@@ -1,5 +1,6 @@
 const grid = document.getElementById("grid");
 
+
 for (let row = 0; row < 16; row++) {
     const rowDiv = document.createElement("div");
     rowDiv.classList.add("row");
@@ -12,3 +13,11 @@ for (let row = 0; row < 16; row++) {
 
     grid.appendChild(rowDiv);
 }
+
+const cells = document.querySelectorAll(".cell");
+
+cells.forEach(cell => {
+    cell.addEventListener("mouseover", () => {
+        cell.classList.add("colored");
+    });
+});
