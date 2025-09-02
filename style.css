@@ -1,27 +1,35 @@
-  body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-  }
+    #controls {
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+        position: sticky;
+        top: 0;
+        background: #fff;
+        font-family: system-ui, sans-serif;
+    }
 
-  #grid {
-      display: inline-block;
-      border: 1px solid #ddd;
-  }
+    button {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
 
-  .row {
-      display: flex;
-  }
+    #grid {
+        width: 960px;
+        height: 960px;
+        margin: 16px auto;
+        border: 1px solid #ddd;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
 
-  .cell {
-      flex: 0 0 40px;
-      height: 40px;
-      border: 1px solid #ddd;
-      box-sizing: border-box;
-  }
+    .cell {
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        background: #fff;
+    }
 
-  .colored {
-      background-color: black;
-  }
+    .colored {
+        background: #000;
+    }
