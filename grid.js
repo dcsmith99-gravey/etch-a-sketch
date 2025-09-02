@@ -1,16 +1,16 @@
 (function () {
-    var grid = document.getElementById("grid");
-    var resizeBtn = document.getElementById("resizeBtn");
+    let grid = document.getElementById("grid");
+    let resizeBtn = document.getElementById("resizeBtn");
     const GRID_SIZE = 960;
 
     function buildGrid(n) {
         n = Math.max(1, Math.min(100, parseInt(n, 10) || 16));
         grid.innerHTML = "";
 
-        var cellSize = grid.clientWidth / n;
+        let cellSize = grid.clientWidth / n;
 
-        for (var i = 0; i < n * n; i++) {
-            var cell = document.createElement("div");
+        for (let i = 0; i < n * n; i++) {
+            let cell = document.createElement("div");
             cell.className = "cell";
             cell.style.width = cellSize + "px";
             cell.style.height = cellSize + "px";
@@ -32,9 +32,9 @@
     });
 
     resizeBtn.addEventListener("click", function () {
-        var input = prompt("How many squares per side? (1–100)", "16");
+        let input = prompt("How many squares per side? (1–100)", "16");
         if (input === null) return;
-        var n = parseInt(input, 10);
+        let n = parseInt(input, 10);
         if (isNaN(n) || n < 1 || n > 100) {
             alert("Please enter a whole number between 1 and 100.");
             return;
