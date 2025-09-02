@@ -1,7 +1,7 @@
 (function () {
     var grid = document.getElementById("grid");
     var resizeBtn = document.getElementById("resizeBtn");
-    var GRID_SIZE = 960;
+    const GRID_SIZE = 960;
 
     function buildGrid(n) {
         n = Math.max(1, Math.min(100, parseInt(n, 10) || 16));
